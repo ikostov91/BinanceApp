@@ -41,9 +41,29 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Binance.Net": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Formatters.Xml": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "Websocket.Client": {
+              "target": "Package",
+              "version": "[4.4.43, )"
             }
           },
           "imports": [
