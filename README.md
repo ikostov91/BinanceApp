@@ -2,11 +2,11 @@
 Prerequisites: Installed .NET SDK.
 
 Open Windows PowerShell and navigate to project folder with the following command:
-cd ..../BinanceApp.
+1. cd ..../BinanceApp.
 
 To build and run the app, execute the following commands:
-dotnet build - Build the project and its dependencies
-dotnet run - Run the source code.
+1. dotnet build - Build the project and its dependencies
+3. dotnet run - Run the source code.
 
 App can be reached at http://localhost:5049.
 
