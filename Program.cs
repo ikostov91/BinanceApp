@@ -4,6 +4,7 @@ using BinanceWebsocketApp.Services;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BinanceWebsocketApp
 {
@@ -38,7 +39,7 @@ namespace BinanceWebsocketApp
         {
             builder.Services.AddSingleton<DapperContext>();
             builder.Services.AddScoped<IBinanceService, BinanceService>();
-            builder.Services.AddSingleton<IHostedService, BackgroundDataCollectionService>();
+            builder.Services.AddHostedService<BackgroundDataCollectionService>();
             builder.Services.AddControllers((options) =>
             {
                 options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
